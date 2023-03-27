@@ -1,0 +1,20 @@
+{
+  "name": "marlowe-snippets",
+  "displayName": "Marlowe Snippets",
+  "description": "snippets for the Marlowe DSL",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "haskell",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

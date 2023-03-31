@@ -2,6 +2,8 @@
   "name": "marlowe-snippets",
   "displayName": "Marlowe Snippets",
   "description": "snippets for the Marlowe DSL",
+  "author": "andywoodruff6",
+  "publisher": "andywoodruff6",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.76.0"

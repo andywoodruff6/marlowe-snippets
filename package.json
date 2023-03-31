@@ -13,7 +13,7 @@
     "snippets": [
       {
         "language": "haskell",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/marlowe.json"
       }
     ]
   }

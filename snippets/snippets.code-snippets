@@ -1,1 +1,32 @@
-{}
+{
+    "deposit": {
+        "scope": "haskell",
+        "body": [
+            "(Deposit",
+            "\t(Role ${1:to})",
+            "\t(Role ${2:from})",
+            "\t(Token ${3|token name, '' '' |})",
+            "\t(ConstantParam ${4:value})",
+        ],
+        "prefix": "deposit"
+    },
+    "when": {
+        "prefix": "when",
+        "scope": "haskell",
+        "body": [
+            "When",
+            "\t[Case ",
+            "\t $1",
+            "\t]",
+            "\t(TimeParam 'Payment deadline')",
+            "\tClose"
+        ]
+    }
+}
+// "when": {
+//     "prefix": "",
+//     "scope": "",
+//     "body": [
+        
+//     ]
+// }

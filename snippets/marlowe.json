@@ -18,6 +18,15 @@
             "\t(ConstantParam ${4:value})"
         ]
     },
+    "if": {
+        "prefix": "if",
+        "body": [
+            "(If",
+            "\t${1:observation}",
+            "\t${2:true contract}",
+            "\t${3:false contract}"
+        ]
+    },
     "Pay": {
         "prefix": "pay",
         "body": [

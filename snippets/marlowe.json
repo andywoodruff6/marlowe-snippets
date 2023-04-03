@@ -41,6 +41,13 @@
             "\t ${2:value}"
         ]
     },
+    "Party": {
+        "prefix": "party",
+        "body": [
+            "(Party",
+            "\t${1:(Address or (Role} ${2:address or name}))"
+        ]
+    },
     "Pay": {
         "prefix": "pay",
         "body": [

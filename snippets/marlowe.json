@@ -1,4 +1,11 @@
 {
+    "Assert": {
+        "prefix": "assert",
+        "body": [
+            "(Assert",
+            "\t${1:observation}"
+        ]
+    },
     "choice": {
         "prefix": "choice",
         "body": [
@@ -25,6 +32,13 @@
             "\t${1:observation}",
             "\t${2:true contract}",
             "\t${3:false contract}"
+        ]
+    },
+    "Let": {
+        "prefix": "let",
+        "body": [
+            "(Let ${1:valueId}",
+            "\t ${2:value}"
         ]
     },
     "Pay": {

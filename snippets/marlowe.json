@@ -47,6 +47,13 @@
             "\t ${2:value}"
         ]
     },
+    "Notify": {
+        "prefix": "notify",
+        "body": [
+            "(Notify",
+            "\t${1:observation}"
+        ]
+    },
     "Party": {
         "prefix": "party",
         "body": [

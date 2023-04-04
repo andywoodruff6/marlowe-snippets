@@ -12,6 +12,13 @@
             "(Bound ${1:0} ${2:0}"
         ]
     },
+    "case": {
+        "prefix": "case",
+        "body": [
+            "(Case",
+            "\t $1"
+        ]
+    },
     "choice": {
         "prefix": "choice",
         "body": [
@@ -54,6 +61,12 @@
             "\t${1:observation}"
         ]
     },
+    "Observation": {
+        "prefix": "observation",
+        "body": [
+            "(${1|AndObs,OrObs,NotObs,ChoseSomething,ValueGE,ValueGT,ValueLT,ValueLE,ValueEQ,TrueObs,FlaseObs)"
+        ]
+    },
     "Party": {
         "prefix": "party",
         "body": [
@@ -69,6 +82,12 @@
             "\t(Account $2)",
             "\t(Token ${3|token name, '' '' |})",
             "\t(ConstantParam '$4'"
+        ]
+    },
+    "Payee": {
+        "prefix": "party",
+        "body": [
+            "(Payee ${1: Account or Party})"
         ]
     },
     "value": {

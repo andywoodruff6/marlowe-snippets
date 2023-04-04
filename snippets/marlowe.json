@@ -6,20 +6,20 @@
             "\t${1:observation}"
         ]
     },
-    "bound": {
+    "Bound": {
         "prefix": "bound",
         "body": [
             "(Bound ${1:0} ${2:0}"
         ]
     },
-    "case": {
+    "Case": {
         "prefix": "case",
         "body": [
             "(Case",
             "\t $1"
         ]
     },
-    "choice": {
+    "Choice": {
         "prefix": "choice",
         "body": [
             "(Choice",
@@ -28,7 +28,7 @@
             "\t(Bound ${3:#} ${4:#})])"
         ]
     },
-    "deposit": {
+    "Deposit": {
         "prefix": "deposit",
         "body": [
             "(Deposit",
@@ -38,7 +38,7 @@
             "\t(ConstantParam ${4:value})"
         ]
     },
-    "if": {
+    "If": {
         "prefix": "if",
         "body": [
             "(If",
@@ -64,7 +64,7 @@
     "Observation": {
         "prefix": "observation",
         "body": [
-            "(${1|AndObs,OrObs,NotObs,ChoseSomething,ValueGE,ValueGT,ValueLT,ValueLE,ValueEQ,TrueObs,FlaseObs)"
+            "(${1|AndObs,OrObs,NotObs,ChoseSomething,ValueGE,ValueGT,ValueLT,ValueLE,ValueEQ,TrueObs,FlaseObs|}   )"
         ]
     },
     "Party": {
@@ -90,14 +90,14 @@
             "(Payee ${1: Account or Party})"
         ]
     },
-    "value": {
+    "Value": {
         "prefix": "value",
         "body": [
             "(${1|Constant ,NegValue #),AddValue\t,SubValue\t,MulValue\t,DivValue\t,ChoiceValue\t,TimeIntervalStart,TimeIntervalEnd,UseValue\t,Cond\t|}",
             "\t"
         ]
     },
-    "when": {
+    "When": {
         "prefix": "when",
         "body": [
             "When",

@@ -6,6 +6,12 @@
             "\t${1:observation}"
         ]
     },
+    "bound": {
+        "prefix": "bound",
+        "body": [
+            "(Bound ${1:0} ${2:0}"
+        ]
+    },
     "choice": {
         "prefix": "choice",
         "body": [
@@ -61,7 +67,7 @@
     "value": {
         "prefix": "value",
         "body": [
-            "(${1| Constant, NegValu |}",
+            "(${1|Constant ,NegValue #),AddValue\t,SubValue\t,MulValue\t,DivValue\t,ChoiceValue\t,TimeIntervalStart,TimeIntervalEnd,UseValue\t,Cond\t|}",
             "\t"
         ]
     },

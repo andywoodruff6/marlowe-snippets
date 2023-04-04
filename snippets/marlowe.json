@@ -3,20 +3,22 @@
         "prefix": "assert",
         "body": [
             "(Assert",
-            "\t${1:observation}"
+            "\t${1:observation}",
+            ")"
         ]
     },
     "Bound": {
         "prefix": "bound",
         "body": [
-            "(Bound ${1:0} ${2:0}"
+            "[Bound ${1:0} ${2:0}]"
         ]
     },
     "Case": {
         "prefix": "case",
         "body": [
             "(Case",
-            "\t $1"
+            "\t $1",
+            ")"
         ]
     },
     "Choice": {
@@ -24,8 +26,10 @@
         "body": [
             "(Choice",
             "\t(ChoiceId '$1'",
-            "\t\t(Role '$2')) [",
-            "\t(Bound ${3:#} ${4:#})])"
+            "\t\t(Role '$2')",
+            "\t)",
+            "\t[Bound ${3:#} ${4:#}]",
+            ")"
         ]
     },
     "Deposit": {
@@ -35,7 +39,8 @@
             "\t(Role ${1:to})",
             "\t(Role ${2:from})",
             "\t(Token ${3|token name, '' '' |})",
-            "\t(ConstantParam ${4:value})"
+            "\t(ConstantParam ${4:value})",
+            ")"
         ]
     },
     "If": {
@@ -44,21 +49,24 @@
             "(If",
             "\t${1:observation}",
             "\t${2:true contract}",
-            "\t${3:false contract}"
+            "\t${3:false contract}",
+            ")"
         ]
     },
     "Let": {
         "prefix": "let",
         "body": [
             "(Let ${1:valueId}",
-            "\t ${2:value}"
+            "\t ${2:value}",
+            ")"
         ]
     },
     "Notify": {
         "prefix": "notify",
         "body": [
             "(Notify",
-            "\t${1:observation}"
+            "\t${1:observation}",
+            ")"
         ]
     },
     "Observation": {
@@ -71,17 +79,20 @@
         "prefix": "party",
         "body": [
             "(Party",
-            "\t${1:(Address or (Role} ${2:address or name}))"
+            "\t${1:(Address or (Role} ${2:address or name}))",
+            ")"
         ]
     },
     "Pay": {
         "prefix": "pay",
         "body": [
             "(Pay",
-            "\t(Role '$1'",
+            "\t(Role '$1')",
             "\t(Account $2)",
             "\t(Token ${3|token name, '' '' |})",
-            "\t(ConstantParam '$4'"
+            "\t(ConstantParam '$4')",
+            "\t",
+            ")"
         ]
     },
     "Payee": {
@@ -102,7 +113,7 @@
         "body": [
             "When",
             "\t[Case ",
-            "\t $1",
+            "\t\t$1",
             "\t]",
             "\t(TimeParam 'Payment deadline')",
             "\tClose"

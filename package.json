@@ -3,7 +3,7 @@
   "displayName": "Marlowe Snippets",
   "description": "snippets for the Marlowe DSL",
   "author": "andywoodruff6",
-  "publisher": "andywoodruff6",
+  "publisher": "Andy Woodruff",
   "repository": "https://github.com/andywoodruff6/marlowe-snippets",
   "version": "0.0.2",
   "engines": {

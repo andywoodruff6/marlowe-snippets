@@ -8,20 +8,31 @@ These are a collection of snippets to make it easier and faster to create Marlow
 
 ## Snippets
 
-| Snippet | Code Block |
-|---------|------------|
-| when    | something  |
-| deposit | something  |
+The current snippets are:
+
+- Assert
+- Bound
+- Case
+- Choice
+- Deposit
+- If
+- Let
+- Notify
+- Party
+- Pay
+- Payee
+- Value
+- When
 
 ## Releases
 
-### 1.0.0
+### 0.0.2
 
-Date: 2023-04-10
+Date: 2023-04-05
 
 ## Contributing
 
-This is an open source project open to anyone. Contributions are welcome [github](https://github.com/andywoodruff6/marlowe-snippets)
+This is an open source project. Contributions are welcome [github](https://github.com/andywoodruff6/marlowe-snippets)
 
 ---
 

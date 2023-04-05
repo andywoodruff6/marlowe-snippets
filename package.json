@@ -2,7 +2,10 @@
   "name": "marlowe-snippets",
   "displayName": "Marlowe Snippets",
   "description": "snippets for the Marlowe DSL",
-  "version": "0.0.1",
+  "author": "andywoodruff6",
+  "publisher": "andywoodruff6",
+  "repository": "https://github.com/andywoodruff6/marlowe-snippets",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.76.0"
   },
@@ -13,7 +16,7 @@
     "snippets": [
       {
         "language": "haskell",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/marlowe.json"
       }
     ]
   }

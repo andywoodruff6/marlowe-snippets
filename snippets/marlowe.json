@@ -25,10 +25,11 @@
         "prefix": "choice",
         "body": [
             "(Choice",
-            "\t(ChoiceId '$1'",
-            "\t\t(Role '$2')",
+            "\t(ChoiceId \"$1\"",
+            "\t\t(Role \"$2\")",
             "\t)",
             "\t[Bound ${3:#} ${4:#}]",
+            "",
             ")"
         ]
     },
@@ -38,8 +39,9 @@
             "(Deposit",
             "\t(Role ${1:to})",
             "\t(Role ${2:from})",
-            "\t(Token ${3|token name, '' '' |})",
+            "\t(Token ${3|token name, \"\" \"\" |})",
             "\t(ConstantParam ${4:value})",
+            "",
             ")"
         ]
     },
@@ -50,6 +52,7 @@
             "\t${1:observation}",
             "\t${2:true contract}",
             "\t${3:false contract}",
+            "",
             ")"
         ]
     },
@@ -87,10 +90,10 @@
         "prefix": "pay",
         "body": [
             "(Pay",
-            "\t(Role '$1')",
+            "\t(Role \"$1\")",
             "\t(Account $2)",
-            "\t(Token ${3|token name, '' '' |})",
-            "\t(ConstantParam '$4')",
+            "\t(Token ${3|token name, \" \" \" \" |})",
+            "\t(ConstantParam \"$4\")",
             "\t",
             ")"
         ]
@@ -115,7 +118,7 @@
             "\t[Case ",
             "\t\t$1",
             "\t]",
-            "\t(TimeParam 'Payment deadline')",
+            "\t(TimeParam \"Payment deadline\")",
             "\tClose"
         ]
     }

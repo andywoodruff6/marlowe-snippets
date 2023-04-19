@@ -29,7 +29,6 @@
             "\t\t(Role \"$2\")",
             "\t)",
             "\t[Bound ${3:#} ${4:#}]",
-            "",
             ")"
         ]
     },
@@ -41,7 +40,6 @@
             "\t(Role ${2:from})",
             "\t(Token ${3|token name, \"\" \"\" |})",
             "\t(ConstantParam ${4:value})",
-            "",
             ")"
         ]
     },
@@ -52,7 +50,6 @@
             "\t${1:observation}",
             "\t${2:true contract}",
             "\t${3:false contract}",
-            "",
             ")"
         ]
     },
@@ -99,7 +96,7 @@
         ]
     },
     "Payee": {
-        "prefix": "party",
+        "prefix": "payee",
         "body": [
             "(Payee ${1: Account or Party})"
         ]
